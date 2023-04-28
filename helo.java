@@ -5,6 +5,7 @@ public class helo {
     public static void main(String[] args) throws InterruptedException {
 
         String greeting = "Welcome to this online Banking System\n";
+
         printingStrings(greeting);
         /*
          * for (int i = 0; i < greeting.length(); i++) {
@@ -14,7 +15,10 @@ public class helo {
          */
 
         String question_one = "what is your name please: ";
+
         printingStrings(question_one);
+        //using the function that is below
+        
         String name = new Scanner(System.in).nextLine();
 
         System.out.print("\nHello Mr. ");
@@ -38,31 +42,14 @@ public class helo {
                         "YOur Balance is $700,000\n" +
                         "Would you like to continue" +
                         "Please choose the option";
-                int choiceNow = new Scanner(System.in).nextInt();
-                if (choiceNow == 1) {
-
-                }
-
-                for (int i = 0; i < case_one.length(); i++) {
-                    System.out.print(case_one.charAt(i));
-                    if (i == case_one.length() - 1) {
-                        System.out.println(" ");
-                    }
-                    Thread.sleep(50);
-                }
-
+                
+                printingStrings(case_one);
                 break;
             }
             case 2: {
-                String case_one = "Thanks for wanting to deposit money in your account.";
+                String case_two = "Thanks for wanting to deposit money in your account.";
 
-                for (int i = 0; i < case_one.length(); i++) {
-                    System.out.print(case_one.charAt(i));
-                    if (i == case_one.length() - 1) {
-                        System.out.println(" ");
-                    }
-                    Thread.sleep(50);
-                }
+                printingStrings(case_two);
 
                 break;
             }
