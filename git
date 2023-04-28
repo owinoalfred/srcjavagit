@@ -1,5 +1,5 @@
 #!/bin/bash
 
 git add .
-git commit -m "my comment "
+git commit -m "i have written a new function and it just adds two numbers "
 git push
